@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>GRE Firmware Tool</DisplayName>
+    <Description>Updates Firmware in GRE Radio Scanners</Description>
+    <Version>0.0.0.1</Version>
+    <ReleaseDate>2016-12-04</ReleaseDate>
+    <Licenses>
+        <License name="GPLv3" file="license.txt" />
+    </Licenses>
+    <Default>true</Default>
+    <Script>installscript.qs</Script>
+</Package>

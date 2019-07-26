@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GREFwTool</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>840</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuScanner">
+    <property name="title">
+     <string>Scanner</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionClear"/>
+    <addaction name="actionDownloadFirmware"/>
+    <addaction name="actionUpdateFirmware"/>
+    <addaction name="actionSetTime"/>
+    <addaction name="actionClearPassword"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <addaction name="menuScanner"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect"/>
+   <addaction name="actionDisconnect"/>
+   <addaction name="actionDownloadFirmware"/>
+   <addaction name="actionUpdateFirmware"/>
+   <addaction name="actionSetTime"/>
+   <addaction name="actionClear"/>
+   <addaction name="actionSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+   <property name="toolTip">
+    <string>About program</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/connect.png</normaloff>:/image/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;onnect</string>
+   </property>
+   <property name="toolTip">
+    <string>Connect to scanner</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/disconnect.png</normaloff>:/image/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Disconnect</string>
+   </property>
+   <property name="toolTip">
+    <string>Disconnect from scanner</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/settings.png</normaloff>:/image/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Configure application</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/clear.png</normaloff>:/image/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;lear</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/application-exit.png</normaloff>:/image/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionSetTime">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/clock.png</normaloff>:/image/clock.png</iconset>
+   </property>
+   <property name="text">
+    <string>Set &amp;Time</string>
+   </property>
+   <property name="toolTip">
+    <string>Set scanner to computer time</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+  </action>
+  <action name="actionClearPassword">
+   <property name="text">
+    <string>Clear &amp;Password</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear Scanner Password</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+  </action>
+  <action name="actionUpdateFirmware">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/update.png</normaloff>:/image/update.png</iconset>
+   </property>
+   <property name="text">
+    <string>Update &amp;Firmware</string>
+   </property>
+   <property name="toolTip">
+    <string>Update Firmware in Scanner</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F</string>
+   </property>
+  </action>
+  <action name="actionDownloadFirmware">
+   <property name="icon">
+    <iconset resource="../GREFwTool.qrc">
+     <normaloff>:/image/download.png</normaloff>:/image/download.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Download Firmware</string>
+   </property>
+   <property name="toolTip">
+    <string>Download Firmware from Website</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../GREFwTool.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>GRE Firmware Tool</Name>
+    <Version>0.2.0.3</Version>
+    <Title>GRE Tools</Title>
+    <Publisher>LinuxSheeple</Publisher>
+    <StartMenuDir>GRE Firmware Tool</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/GREFWTool</TargetDir>
+	<WizardStyle>Aero</WizardStyle>
+    <WizardDefaultWidth>600</WizardDefaultWidth>
+</Installer>
