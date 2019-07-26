@@ -1,4 +1,8 @@
-GREFwTool Version 0.1 Readme   12/17/2016
+Note: the source code is cloned from the original repository: https://github.com/LinuxSheeple-E/GREFwTool which no longer exists.  Since this code is very useful for updating/downgrading firmware in the supported scanners, I have made it available here.
+
+This code has not been forked to allow PSR-800 or Pro-688 scanners to be upgraded to the WS-1080 firmware (although that was one of the original uses). 
+
+GREFwTool
 
 This tool is a simple application that can update the firmware and set the
 time for some GRE based scanners. Currently this includes the PSR-800, Pro-18,
@@ -100,8 +104,7 @@ was used as the IDE for code development. Qt Installer Framwork was used to
 create the installer. Make sure the Qt Installer Framework bin directory is
 included in the PATH variable of the Qt Build Environment.
 
-Source code is available at: https://github.com/LinuxSheeple-E/GREFwTool
-
+Source code is available at: https://github.com/philcovington/GREFwTool
 There are two project files, GREFwTool.pro to build the tool, and
 GREFwToolInstaller.pro to build the windows installer. The project files assume
 that the application and installer are built using a shadow build. The build
